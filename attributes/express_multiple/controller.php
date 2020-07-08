@@ -53,7 +53,7 @@ class Controller extends \Concrete\Attribute\Express\Controller
             }
         }
 
-        return $this->createAttributeValue($entries);
+        return $this->createAttributeValue(array_filter($entries));
     }
 
     public function getSearchIndexValue()
