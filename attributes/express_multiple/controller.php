@@ -39,6 +39,7 @@ class Controller extends \Concrete\Attribute\Express\Controller
         $this->set('entryOptions', $entryOptions);
         $this->set('selectedEntryIDs', $selectedEntryIDs);
         $this->set('entity', $entity);
+        $this->set('attributeKeyID',$this->attributeKey->getAttributeKeyID());
         $this->requireAsset('selectize');
     }
 
